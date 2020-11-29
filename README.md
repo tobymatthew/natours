@@ -1,0 +1,1 @@
+Natours is a scss pratical project, i used it to practice my css and scss.

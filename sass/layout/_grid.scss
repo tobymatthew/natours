@@ -1,0 +1,46 @@
+
+
+.row{
+    max-width:$grid-width;
+    //background-color: #eee;
+    margin: 0 auto;
+    
+
+    &:not(:last-child){
+        margin-bottom: $vertical-column-spacing;
+
+    }
+
+    @include clear-fix;
+
+  [class^="col-"]{
+
+    float: left;
+  
+    &:not(:last-child){
+        margin-right: $horizontal-column-spacing;
+    }
+  }
+
+.col-1-of-2{
+    width: calc((100% - #{$horizontal-column-spacing})/2);
+}
+
+.col-1-of-3{
+    width: calc((100% - 2*#{$horizontal-column-spacing})/3);
+}
+
+.col-2-of-3{
+    width: calc( 2 * ((100% - 2 * #{$horizontal-column-spacing})/3) + #{$horizontal-column-spacing});
+}
+
+.col-1-of-4{
+    width: calc((100% - 3*#{$horizontal-column-spacing})/4);
+}
+
+.col-2-of-4{
+    width: calc( 2 * ((100% -2 * #{$horizontal-column-spacing})/4) + #{$horizontal-column-spacing});
+}
+
+}
+
